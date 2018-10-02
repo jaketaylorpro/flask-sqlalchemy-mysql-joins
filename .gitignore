@@ -1,0 +1,16 @@
+b.bat
+are_you_sure.bat
+*pyc
+.idea/*
+!.idea/codeStyleSettings.xml
+temp/*
+app/static/images/about4.xcf
+commit-to-all
+tests/features/geckodriver.log
+
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+venv/
