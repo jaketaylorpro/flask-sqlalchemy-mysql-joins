@@ -1,4 +1,3 @@
-import json
 from . import api
 from ..db.user import User
 
@@ -7,4 +6,4 @@ from ..db.user import User
 def get_user(user_id):
     print('loading user: ' + str(user_id))
     user = User.query.filter_by(id=user_id).first()
-    return json.dumps(user.asdict(exclude_pk=True))
+    return user.to_json()
